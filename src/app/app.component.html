@@ -1,21 +1,154 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<a class="navbar-brand" routerLink="home">
+  <img src="assets/img/logo.png" width="50" height="50" alt="">
+  White Himalayan Engineering
+</a>
+
+<div class="collapse navbar-collapse" id="navbarToggler">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="home">About Us<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+        Processing Plants
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" routerLink="products/1" routerLinkActive = "active">Dairy Processing Plants</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" routerLink="products/2" routerLinkActive = "active">Honey Processing Plants</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Distillery Processing Plants</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Paneer Processing Plants</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Beverage Juice Processing Plants</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Food Processing Plants</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Brewery Processing Plants</a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Processing Equipments
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Milk Chilling Vat</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Batch Pasteurizer</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Homogeniser</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Centrifugal Pumps</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Plate Heat Exchanger</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Packaging Machine</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Cream Seperator</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Ice Bank Tank</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Storage Equipments
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Single Shell Milk Storage Tank</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Double Shell Milk Storage Tank</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Jackated Tank</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Road Milk Tanker</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Storage Silo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Ice Cream Trolly</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Ice Cream Continue Freezer</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Cold Storage</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Commercial Kitchen Equipments
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Single Burner Gas Cooking Range</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Double Burner Gas Cooking Range</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Three Burner Gas Cooking Range</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Four Burner Gas Cooking Range</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Four Burner With Oven</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Chinese/Indian Gas Cooking Range</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+              <a class="nav-link" routerLink="contact">Contact Us<span class="sr-only">(current)</span></a>
+            </li>
+    </ul>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+
+
+
+
+</nav>
+
+
 
 <router-outlet></router-outlet>
+
+
+
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+  <div class="container">
+    <div class="row row-30">
+      <div class="col-md-4 col-xl-5">
+        <div class="pr-xl-4">
+          <p>We are dedicated to the manufacturing buisness in Nepal.</p>
+          <!-- Rights-->
+          <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>WhiteHimalayanGroup</span><span>. </span><span>All Rights Reserved.</span></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h5>Contacts</h5>
+        <dl class="contact-list">
+          <dt>Address:</dt>
+          <dd>Bharatpur-9 Gondrang, Chitwan, Nepal</dd>
+        </dl>
+        <dl class="contact-list">
+          <dt>Email:</dt>
+          <dd><a href="mailto:#">whegroup@gmail.com</a></dd>
+        </dl>
+        <dl class="contact-list">
+          <dt>Phones:</dt>
+          <dd><a href="tel:#">+977 9855063143</a> <span> or </span> <a href="tel:#">+977 056-531701</a>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-4 col-xl-3">
+        <h5>Links</h5>
+        <ul class="nav-list">
+          <li><a href="#">About</a></li>
+          <li><a routerLink = "products">Products</a></li>
+          <li><a routerLink = "contact">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

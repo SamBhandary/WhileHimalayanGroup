@@ -1,0 +1,16 @@
+h1 {
+    color: lightslategrey;
+    margin-left: 100px;
+
+}
+
+img {
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    height: 400px;
+    width: 600px;
+    position: centre;
+    margin-left:100px;
+    margin-top:20px;
+}
